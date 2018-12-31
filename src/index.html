@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Coming Back</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h1 class="text-center">Coming Back</h1>
+          <hr/>
+          <br/>
+          
+
+        </div>
+
+      </div>
+      <div class="create">
+        <button class="btn btn-primary btn-create" type="button" data-id="0" >CreateLooker</button><br/>
+        <table class="create-table" style="display:none;">
+          <tr>  
+            <td><input type="text" placeholder="PhoneNumber" id="PhoneNumber" name="PhoneNumber" /></td>
+            <td></td>
+          </tr><br/>
+          <tr>  
+            <td><input type="text" placeholder="Missname" name="Missname" id="Missname" /></td>
+            <td></td>
+          </tr><br/>
+          <tr>  
+            <td><input type="text" placeholder="MissPicture" name="MissPicture" id="MissPicture" /></td>
+            <td></td>
+
+          </tr><br/>
+          <tr>  
+            <td><input type="text" placeholder="MoreDetails" name="MoreDetails" id="MoreDetails" /></td>
+            <td></td>
+          </tr><br/>
+          <tr>  
+            <td><input type="text" placeholder="Bonus" name="Bonus" id="Bonus" /></td>
+            <td></td>
+          </tr><br/>
+        </table>
+      </div>
+      
+
+      <div id="lookersRow" class="row">
+        <!-- lookerS LOAD HERE -->
+      </div>
+
+      <hr/>
+      <p id="accountLover" class="test-center"></p>
+
+      <div id="lookerTemplate" style="display: none;">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="panel panel-default panel-looker">
+            <div class="panel-heading">
+              <h3 class="panel-title">Scrappy</h3>
+            </div>
+            <div class="panel-body">
+              <img alt="140x140" data-src="holder.js/140x140" class="img-rounded img-center" style="width: 100%;" src="https://animalso.com/wp-content/uploads/2017/01/Golden-Retriever_6.jpg" data-holder-rendered="true">
+              <br/><br/>
+              <strong>Info</strong>: <span class="looker-breed">Golden Retriever</span><br/>
+              <strong>Bonus</strong>: <span class="looker-bonus">3</span><br/>
+              <strong>Connection</strong>: <span class="looker-location">Warren, MI</span><br/><br/>
+              <button type="submit" class="btn btn-default btn-doc btn-donation" data-id="0">Donation</button>
+              <button type="submit" class="btn btn-default btn-doc btn-ok" data-id="0" style="display: none;">OK</button>
+              <button type="submit"  class="btn btn-default btn-doc btn-check" data-id="0">Check</button>
+
+            </div>
+            <div class="hidePart" style="display:none;">
+                  <input type="text" placeholder="Input" id="input" name="Input" />
+                  <button class="btn btn-primary btn-cancel btn-doc" type="button " data-id="0">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+<style>
+    .btn-donation{
+      float:left;
+    }
+    .btn-check,.btn-ok{
+        float:right;
+    }
+    .test-center{
+      text-align: center;
+    }
+    .create-table{
+      margin-top: -60px;
+    }
+    table tr{
+      border-bottom: 2px solid #efefef;
+      height: 40px;
+      z-index:999;
+    }
+    .hidePart tr{
+      height: 40px;
+      z-index:999;
+      margin-top: 10px;
+    }
+    .create{
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      z-index:999;
+    }
+</style>
